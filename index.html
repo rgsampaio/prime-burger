@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Burger</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9faa1959c6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="container nav">
+            <div>
+                <a href="#" class="logo">Prime Burger</a>
+            </div>
+
+            <div>
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active-link">Início</a></li>
+                    <li><a href="#recents" class="nav-link">Novidades</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#pizzas" class="nav-link">Pizzas</a></li>
+                    <li><a href="#customers" class="nav-link">Clientes</a></li>
+                    <li><a href="#" aria-label="Carrinho" class="nav-link icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#" class="btn nav-link">Login</a></li>
+                </ul>
+            </div>
+
+            <button class="btn-mobile" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section home">
+            <div class="container home-container">
+                <div class="home-text">
+                    <h1>Não é só um Hambúrguer. <span class="accent">É um Prime</span>.</h1>
+                    <p>Carne no ponto perfeito, pão selado na manteiga e combinações que desafiam o óbvio. Na Prime Burger, a excelência não é um detalhe, é o ingrediente principal.</p>
+                    <a href="#" class="btn">Peça Agora</a>
+                </div>
+
+                <div class="home-img">
+                    <img src="assets/img/home-burger.png" alt="Hambúrguer" class="home-burger-img">
+                    <img src="assets/img/home-dish.png" alt="Prato" class="home-dish-img">
+                    <img src="assets/img/fire.svg" alt="" class="flame flame-1">
+                    <img src="assets/img/fire.svg" alt="" class="flame flame-2">
+                </div>
+            </div>
+
+            <div class="home-review">
+                <div class="review-avatars">
+                    <img src="assets/img/review-1.jpg" alt="Cliente 1">
+                    <img src="assets/img/review-2.jpg" alt="Cliente 2">
+                    <img src="assets/img/review-3.jpg" alt="Cliente 3">
+                </div>
+
+                <div class="review-info">
+                    <h3>Clientes Satisfeitos</h3>
+                    <p><i class="fa-solid fa-star"></i> 4.8 <span>(5.5k avaliações)</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recents" class="section ">
+            <div class="reveal">
+                <h2 class="title-primary">NOVIDADES</h2>
+                <h3 class="title-secondary">O Sabor da Temporada</h3>
+                <div class="container grid recents-grid">
+                    <article class="card" id="duplo-smash-burger">
+                        <img src="assets/img/hamb-1.png" alt="Imagem Hambúrguer">
+                        <h4>O Clássico Duplo Smash</h4>
+                        <span class="price">R$29,90</span>
+                    </article>
+                    <article class="card" id="bacon-ranch-deluxe">
+                        <img src="assets/img/hamb-2.png" alt="Imagem Hambúrguer">
+                        <h4>Deluxe Bacon & Molho Ranch</h4>
+                        <span class="price">R$34,90</span>
+                    </article>
+                    <article class="card" id="texas-bacon-melt">
+                        <img src="assets/img/hamb-3.png" alt="Imagem Hambúrguer">
+                        <h4>Texas Bacon Melt</h4>
+                        <span class="price">R$31,90</span>
+                    </article>
+                    <article class="card" id="the-king-flame">
+                        <img src="assets/img/hamb-4.png" alt="Imagem Hambúrguer">
+                        <h4>Smash Onion Crunch</h4>
+                        <span class="price">R$32,90</span>
+                    </article>
+                    <article class="card" id="crunch-burger">
+                        <img src="assets/img/hamb-5.png" alt="Imagem Hambúrguer">
+                        <h4>Crunch Burger</h4>
+                        <span class="price">R$32,90</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container grid about-grid reveal">
+                <figure>
+                    <img src="assets/img/about-image.jpg" alt="Cozinha artesal">
+                </figure>
+
+                <div class="about-text">
+                    <h2 class="title-primary">NOSSA FILOSOFIA</h2>
+                    <h3 class="title-secondary">Qualidade. Sabor. Obsessão.</h3>
+                    <p>Não é sobre fazer rápido, é sobre fazer certo. Escolhemos nossos cortes de carne a dedo, preparamos nossos molhos do zero e selamos o pão no tempo exato. Acreditamos que um grande burger não é um acidente, é uma obsessão por detalhes.</p>
+
+                    <div class="stats">
+                        <div><span>120+</span><p>Receitas</p></div>
+                        <div><span>10k+</span><p>Clientes</p></div>
+                        <div><span>11+</span><p>Prêmios</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pizzas" class="section pizzas">
+            <div class="grid pizzas-grid reveal">
+
+                <div class="menu-highlight">
+                    <div class="content">
+                        <h2>Da Grelha ao Forno: A Excelência Prime.</h2>
+                        <p>O equilíbrio perfeito entre a suavidade da mussarela, o toque picante do gorgonzola, a cura do parmesão e o defumado do provolone. Uma sinfonia de laticínios.</p>
+                        <a href="#" class="btn">Ver Pizza</a>
+                    </div>
+                </div>
+
+                <article class="pizza" id="pizza-quatro-queijos">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h3>Pizza Quatro Queijos</h3>
+                        <p>Uma mistura perfeita de mussarela, parmesão, provolone e gorgonzola. Cremosa, marcante e feita para quem ama intensidade de sabor.</p>
+                        <span class="price">R$34,90</span>
+                    </div>
+                </article>
+
+                <article class="pizza" id="pizza-margherita">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h3>Pizza Margherita Artesanal</h3>
+                        <p>O clássico italiano: molho de tomates frescos (feito na casa), mussarela de búfala pura, folhas de manjericão e um fio de azeite extravirgem.</p>
+                        <span class="price">R$36,90</span>
+                    </div>
+                </article>
+
+                <article class="pizza" id="pizza-pepperoni">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h3>Pepperoni Prime Pizza</h3>
+                        <p>Massa crocante, molho de tomate da casa e coberta de borda a borda com pepperoni de alta qualidade, levemente picante, e queijo premium derretido.</p>
+                        <span class="price">R$38,90</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="customers" class="section">
+            <h2 class="title-secondary">A Opinião de Quem Prova.</h2>
+
+            <div class="container customers-container reveal">
+                <article class="customer">
+                    <h3>Simplesmente irresistível!</h3>
+                    <p>O sabor é incrível, tudo chega quentinho e com aquele toque artesanal que faz toda a diferença.</p>
+                    <img src="assets/img/customer-1.jpg" alt="Rafael">
+                    <span>Rafael Lima</span>
+                </article>
+
+                <article class="customer">
+                    <h3>Melhor hambúrguer que já comi!</h3>
+                    <p>Experiência perfeita do início ao fim. Pão macio, carne suculenta e um atendimento impecável.</p>
+                    <img src="assets/img/customer-2.jpg" alt="Carlos">
+                    <span>Carlos Mendes</span>
+                </article>
+
+                <article class="customer">
+                    <h3>Voltei no dia seguinte!</h3>
+                    <p>Não resisti e pedi de novo. A combinação de sabores é única, dá pra sentir o cuidado em cada detalhe.</p>
+                    <img src="assets/img/customer-3.jpg" alt="Mariana">
+                    <span>Mariana Torres</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section newsletter">
+            <h2>Fique por dentro das <br><span class="accent">nossas ofertas</span>!</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Digite seu e-mail" required>
+                <button class="btn">Quero receber!</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="section footer">
+        <div class="container footer-container">
+            <div class="footer-contact">
+                <a href="#" class="logo">Prime Burger</a>
+                <p>Prime Burger é a nossa assinatura de qualidade. Da escolha da carne ao pão, entregamos uma experiência de burger que respeita o sabor acima de tudo.</p>
+                <p>789 Sabor Avenue, Burger City - Brasil</p>
+                <p>(11) 91234-5678</p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h3>Links</h3>
+                    <ul class="footer-list">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#recents">Recentes</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#pizzas">Pizzas</a></li>
+                        <li><a href="#customers">Clientes</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Horário</h3>
+                    <p>Seg - Sáb</p>
+                    <p>10h - 23h</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="copyright">© 2025 PRIME BURGER. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
