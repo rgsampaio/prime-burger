@@ -629,3 +629,72 @@ img {
     background-color: var(--second-color-alt);
     cursor: pointer;
 }
+
+/*---------= Footer =---------*/
+.footer {
+    background-color: var(--body-color);
+    border-top: 1px solid #2a2a2a;
+    padding-bottom: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.footer-contact .logo {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.footer-contact p {
+    font-size: var(--font-size-100);
+    color: var(--text-color-light);
+    margin-bottom: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+.footer-links div h3 {
+    font-size: var(--font-size-300);
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.footer-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.footer-list a {
+    font-size: var(--font-size-100);
+    color: var(--text-color-light);
+    text-decoration: underline;
+}
+
+.footer-list a:hover {
+    color: var(--first-color);
+}
+
+.footer-links div p {
+    font-size: var(--font-size-100);
+    color: var(--text-color-light);
+    margin-bottom: 1rem;
+}
+
+.copyright {
+    color: var(--text-color-light);
+    font-size: var(--font-size-100);
+    padding: 0 1rem;
+    text-align: center;
+}
