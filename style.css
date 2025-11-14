@@ -347,7 +347,6 @@ img {
     color: var(--text-color-light);
 }
 
-
 /*---------= Recents =---------*/
 #recents {
     background-color: var(--first-color);
@@ -355,7 +354,7 @@ img {
 
 .recents-grid {
     padding: 2rem 1rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
 }
 
@@ -697,4 +696,207 @@ img {
     font-size: var(--font-size-100);
     padding: 0 1rem;
     text-align: center;
+}
+
+/*---------= Large Devices =---------*/
+@media screen and (min-width: 1150px) {
+    #header .nav {
+        padding: 0;
+    }
+
+    .btn-mobile {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        padding: 0.8rem 0;
+        position: static;
+        box-shadow: none;
+        gap: 2rem;
+    }
+
+    .nav-link {
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: var(--first-color);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0.5rem;
+        transition: all 0.2s;
+    }
+
+    .nav-link:hover {
+        background-color: transparent;
+        color: var(--first-color);
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    .active-link::after {
+        color: var(--first-color);
+        width: 100%;
+    }
+
+    .icon {
+        font-size: var(--font-size-200);
+        color: var(--first-color);padding: 0.8rem 1rem;
+        transition: all 0.2s;
+    }
+    
+    .icon:hover {
+        opacity: 0.6;
+    }
+
+    .icon:hover::after {
+        width: 0;
+    }
+
+    .nav-list .btn {
+        border: 2px solid var(--text-color-light);
+        color: var(--first-color);
+        padding: 1rem 2.5rem;
+        transition: all 0.15s;
+        background-color: transparent;
+    }
+
+    .nav-list .btn:hover {
+        opacity: 0.6;
+        background-color: transparent;
+    }
+
+    .nav-list .btn:hover::after {
+        width: 0;
+    }
+
+    .home {
+        padding-top: 7rem;
+    }
+
+    .home-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-text {
+        text-align: left;
+        flex: 0 1 600px;
+    }
+
+    .home-text .btn {
+        display: block;
+        margin: 0 auto 0 0;
+        padding: 1.5rem 3.5rem;
+    }
+
+    .home-burger-img {
+        width: 450px;
+    }
+
+    .home-dish-img {
+        width: 400px;
+        bottom: -3.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+
+    .about-grid figure {
+        order: 0;
+    }
+
+    .about-grid figure img {
+        aspect-ratio: inherit;
+        border-radius: 50% / 35%;
+    }
+
+    .about-text {
+        display: grid;
+        align-content: center;
+    }
+
+    .about-text h2,
+    .about-text h3,
+    .about-text p {
+        text-align: left;
+    }
+
+    .stats {
+        justify-content: start;
+        flex-flow: row nowrap;
+        gap: 4rem;
+    }
+
+    .pizzas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 450px);
+    }
+
+    .pizzas .content {
+        text-align: left;
+        padding: 2rem 6rem;
+    }
+
+    .newsletter {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .newsletter h2 {
+        text-align: left;
+    }
+
+    .newsletter-form {
+        display: flex;
+        width: 100%;
+        max-width: 700px;
+        gap: 1rem;
+    }
+
+    .newsletter-form input {
+        margin-bottom: 0;
+        color: var(--text-color-dark);
+    }
+
+    .newsletter input::placeholder {
+        font-size: var(--font-size-100);
+    }
+
+    .newsletter-form .btn {
+        width: auto;
+        white-space: nowrap;
+        font-size: var(--font-size-100);
+    }
+
+    .footer-container {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .footer-contact {
+        text-align: left;
+    }
+
+    .footer-links {
+        flex-flow: row nowrap;
+        gap: 12rem;
+    }
+
+    .footer-list {
+        flex-flow: column nowrap;
+    }
 }
