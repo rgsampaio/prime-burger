@@ -211,3 +211,138 @@ img {
 .logo:hover {
     color: var(--first-color);
 }
+
+/*---------= Main =---------*/
+.home {
+    background-color: var(--body-color);
+}
+
+.home-container {
+    padding: 3rem 2rem;
+}
+
+.home-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-text h1 {
+    font-size: var(--font-size-600);
+    line-height: 1.2; 
+    margin-bottom: 1.5rem;
+}
+
+.home-text p {
+    margin-bottom: 2.5rem;
+    font-size: var(--font-size-100);
+    color: var(--text-color-light);
+}
+
+.home-text .btn {
+    display: inline-block; 
+    margin-bottom: 3rem;
+    padding: 1rem 2rem;
+    background-color: var(--second-color);
+    color: var(--first-color);
+    font-size: var(--font-size-200);
+    font-weight: var(--font-medium);
+    transition: all 0.2s;
+}
+
+.home-text .btn:hover {
+    background-color: var(--second-color-alt);
+}
+
+.home-img {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    justify-self: center;
+    margin-bottom: 4rem;
+}
+
+.home-burger-img,
+.home-dish-img {
+    filter: drop-shadow(0 0 35px rgba(0, 0, 0, 0.7));
+}
+
+.home-burger-img {
+    width: 340px;
+    z-index: 2;
+}
+
+.home-dish-img {
+    position: absolute;
+    width: 340px;
+    bottom: -2.2rem;
+    z-index: 1;
+}
+
+.flame {
+    position: absolute;
+}
+
+.flame-1 {
+    top: 0;
+    left: 0;
+    max-width: 15%;
+    transform: rotate(-10deg);
+    z-index: 5;
+}
+
+.flame-2 {
+    bottom: 0;
+    right: -0.5rem;
+    transform: rotate(20deg);
+    max-width: 35%;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    z-index: 10;
+}
+
+.home-review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.review-avatars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-avatars img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--body-color);
+    margin-left: -15px;
+    z-index: 1;
+}
+
+.review-avatars img:first-child {
+    margin-left: 0;
+}
+
+.review-info h3 {
+    color: var(--first-color);
+    font-size: var(--font-size-200);
+    margin-bottom: 0.3rem;
+}
+
+.review-info p i {
+    color: var(--second-color);
+}
+
+.review-info p span {
+    color: var(--text-color-light);
+}
