@@ -347,6 +347,7 @@ img {
     color: var(--text-color-light);
 }
 
+
 /*---------= Recents =---------*/
 #recents {
     background-color: var(--first-color);
@@ -387,4 +388,49 @@ img {
 
 .card:hover {
     transform: scale(1.05);
+}
+
+/*---------= About =---------*/
+.about {
+    background-color: var(--first-color);
+    text-align: center;
+}
+
+.about-grid figure {
+    order: 2;
+}
+
+.about-grid figure img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 40px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 550px;
+}
+
+.about-grid p {
+    color: var(--text-color-dark);
+    font-size: var(--font-size-100);
+    margin-bottom: 3rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    column-gap: 1.5rem;
+}
+
+.stats span {
+    font-size: var(--font-size-500);
+    font-weight: var(--font-bold);
+    color: var(--second-color);
+}
+
+.stats p {
+    font-size: var(--font-size-200);
+    font-weight: var(--font-regular);
+    text-transform: uppercase;
 }
