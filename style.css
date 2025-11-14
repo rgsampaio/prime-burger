@@ -434,3 +434,95 @@ img {
     font-weight: var(--font-regular);
     text-transform: uppercase;
 }
+
+/*---------= Pizzas =---------*/
+.pizzas {
+    background-color: var(--first-color);
+    color: var(--first-color);
+    padding: 6rem 0;
+}
+
+.pizzas-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0;
+    overflow: hidden;
+}
+
+.menu-highlight,
+.pizza {
+    position: relative;
+    padding: 4rem 2rem;
+}
+
+.pizza {
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+}
+
+#pizza-quatro-queijos {
+    background-image: url('assets/img/pizza-1.jpg');
+}
+#pizza-margherita {
+    background-image: url('assets/img/pizza-2.jpg');
+}
+#pizza-pepperoni {
+    background-image: url('assets/img/pizza-3.jpg');
+}
+
+.pizza .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.menu-highlight {
+    text-align: center;
+    background-color: var(--second-color);
+    color: var(--first-color);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+}
+
+.content h2 {
+    font-size: var(--font-size-300);
+    color: var(--first-color);
+    margin-bottom: 2rem;
+}
+
+.content h3 {
+    font-size: var(--font-size-300);
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: var(--font-size-100);
+    color: var(--first-color);
+    margin-bottom: 2.5rem;
+}
+
+.content .price {
+    font-size: var(--font-size-300);
+    font-weight: var(--font-bold);
+    color: var(--first-color);
+}
+
+.menu-highlight .btn {
+    font-size: var(--font-size-200);
+    font-weight: var(--font-bold);
+    border: 2px solid var(--first-color);
+    color: var(--first-color);
+    padding: 1rem 2rem;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.menu-highlight .btn:hover {
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
