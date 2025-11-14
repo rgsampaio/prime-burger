@@ -346,3 +346,45 @@ img {
 .review-info p span {
     color: var(--text-color-light);
 }
+
+/*---------= Recents =---------*/
+#recents {
+    background-color: var(--first-color);
+}
+
+.recents-grid {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.card h4 {
+    color: var(--text-color-dark);
+    font-size: var(--font-size-200);
+    font-weight: var(--font-medium);
+    line-height: 1.4;
+}
+
+.card .price {
+    color: var(--second-color);
+    font-size: var(--font-size-300);
+    font-weight: var(--font-medium);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
