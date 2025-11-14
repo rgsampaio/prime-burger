@@ -526,3 +526,59 @@ img {
     background-color: var(--first-color);
     color: var(--second-color);
 }
+
+/*---------= Customers =---------*/
+#customers {
+    background-color: var(--first-color);
+}
+
+#customers .title-secondary {
+    margin-bottom: 4rem;
+}
+
+.customers-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    text-align: center;
+    gap: 2rem;
+}
+
+.customer {
+    background-color: var(--card-color);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 400px;
+    gap: 2rem;
+    padding: 2rem 4rem;
+    transition: all 0.4s;
+}
+
+.customer:hover {
+    transform: scale(1.05);
+}
+
+.customer h3 {
+    font-size: var(--font-size-300);
+    font-weight: var(--font-bold);
+}
+
+.customer p {
+    font-size: var(--font-size-100);
+    color: var(--text-color-light);
+}
+
+.customer img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.customer span {
+    font-size: var(--font-size-200);
+    color: var(--first-color);
+    font-weight: var(--font-regular);
+    text-transform: uppercase;
+}
