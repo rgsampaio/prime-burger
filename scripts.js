@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 
     // ---------= SCROLL =---------
-
     const handleHeaderState = (scrollY) => {
         if (scrollY > 0) { 
             header.classList.add('scrolled');
